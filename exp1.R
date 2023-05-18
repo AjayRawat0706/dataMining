@@ -1,0 +1,11 @@
+#install.packages("RWeka")
+library("RWeka")
+getwd()
+rating<- 1:3
+branch <- c('CSE' , 'AIML' , 'CIVIL')
+student<- c('TERIN' , 'arrow' , 'Nomar')
+no_of_student <- c(50, 100 , 110 )
+print_data <- data.frame(branch , student ,no_of_student, stringsAsFactors = FALSE)
+print(print_data)
+print(class(print_data))
+write.arff(print_data , file ="firstarff.arff")

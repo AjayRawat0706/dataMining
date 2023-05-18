@@ -1,0 +1,10 @@
+@relation R_data_frame
+
+@attribute branch string
+@attribute student string
+@attribute no_of_student numeric
+
+@data
+CSE,TERIN,50
+AIML,arrow,100
+CIVIL,Nomar,110
